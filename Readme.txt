@@ -1,6 +1,6 @@
 Thanks for downloading this template!
 
-Template Name: EstateAgency
-Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+Template Name: Bocor
+Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
