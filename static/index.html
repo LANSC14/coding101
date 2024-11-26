@@ -244,6 +244,28 @@
 
     </section><!-- /Services Section -->
 
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetch('/api/data') // 後端 API 地址
+          .then(response => response.json())
+          .then(data => {
+            console.log(data); // 檢查後端返回的資料
+            const container = document.getElementById('data-container');
+            container.innerHTML = ""; // 清空容器
+            data.forEach(item => {
+              const div = document.createElement('div');
+              div.textContent = `ID: ${item.column1}, Name: ${item.column2}`;
+              container.appendChild(div);
+            });
+          })
+          .catch(error => console.error('Error fetching data:', error));
+      });
+    </script>
+    
+    <div id="data-container">
+      <!-- 資料將顯示在這裡 -->
+    </div>
+    
 
     <!-- Team Section -->
     <section id="team" class="team section">
